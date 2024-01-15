@@ -47,7 +47,7 @@ export default function Header() {
     [],
   );
   return (
-    <header className="lg:sticky lg:top-0 lg:flex lg:h-full lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+    <header className="lg:sticky lg:top-0 lg:flex lg:h-screen lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
       <div>
         <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl">
           <a href="/">David Kang</a>
@@ -58,7 +58,7 @@ export default function Header() {
         <p className="mt-4 max-w-xs leading-normal">
           I build polished, performant, and accessible web experiences.
         </p>
-        <nav className="nav hidden lg:block" aria-label="In-page jump links">
+        <nav className="nav hidden lg:block" aria-label="Jump links">
           <ul className="mt-16 w-max">
             {navItems.map((item, i) => (
               <li key={item.name}>
