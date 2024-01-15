@@ -23,7 +23,7 @@ function SocialMediaLinks() {
       {linkData.map((link) => (
         <li key={link.name} className="mr-5 text-xs">
           <a
-            className="text-zinc-200 hover:text-zinc-100"
+            className="text-zinc-100 hover:text-zinc-100"
             href={link.href}
             target="_blank"
             rel="noopener noreferrer"
@@ -49,10 +49,10 @@ export default function Header() {
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:h-full lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
       <div>
-        <h1 className="text-4xl font-bold tracking-tight text-zinc-200 sm:text-5xl">
+        <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl">
           <a href="/">David Kang</a>
         </h1>
-        <h2 className="mt-3 text-lg font-medium tracking-tight text-zinc-200 sm:text-xl">
+        <h2 className="mt-3 text-lg font-medium tracking-tight text-zinc-100 sm:text-xl">
           Software Engineer at Aetna Health
         </h2>
         <p className="mt-4 max-w-xs leading-normal">
@@ -60,15 +60,16 @@ export default function Header() {
         </p>
         <nav className="nav hidden lg:block" aria-label="In-page jump links">
           <ul className="mt-16 w-max">
-            {navItems.map((item) => (
+            {navItems.map((item, i) => (
               <li key={item.name}>
                 <a
                   className="group flex items-center py-3"
                   href={item.href}
                   aria-current="page"
                 >
-                  <span className="nav-indicator mr-4 h-px w-8 bg-zinc-600 transition-all group-hover:w-16 group-hover:bg-zinc-200 group-focus-visible:w-16 group-focus-visible:bg-zinc-200 motion-reduce:transition-none" />
-                  <span className="nav-text text-xs font-bold uppercase tracking-widest text-zinc-500 group-hover:text-zinc-200 group-focus-visible:text-zinc-200">
+                  <span className="nav-text mr-4 min-w-5 text-xs font-bold uppercase tracking-widest text-zinc-400 group-hover:text-zinc-100 group-focus-visible:text-zinc-100">{`0${i}`}</span>
+                  <span className="nav-indicator mr-4 h-px w-8 bg-zinc-500 transition-all group-hover:w-16 group-hover:bg-zinc-100 group-focus-visible:w-16 group-focus-visible:bg-zinc-100 motion-reduce:transition-none" />
+                  <span className="nav-text text-xs font-bold uppercase tracking-widest text-zinc-400 group-hover:text-zinc-100 group-focus-visible:text-zinc-100">
                     {item.name}
                   </span>
                 </a>
