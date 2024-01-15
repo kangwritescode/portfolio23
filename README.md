@@ -1,85 +1,28 @@
-[![Downloads](https://img.shields.io/npm/dt/create-r3f-app.svg?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/create-r3f-app) [![Discord Shield](https://img.shields.io/discord/740090768164651008?style=flat&colorA=000000&colorB=000000&label=discord&logo=discord&logoColor=ffffff)](https://discord.gg/ZZjjNvJ)
+# Create T3 App
 
-# :japanese_castle: React-Three-Next starter
+This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
 
-A minimalist starter for NextJS, @react-three/fiber and Threejs.
+## What's next? How do I make an app with this?
 
-![](https://user-images.githubusercontent.com/2223602/192515435-a3d2c1bb-b79a-428e-92e5-f44c97a54bf7.jpg)
+We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
 
-- TTL ~ 100ms
-- First load JS ~ 79kb
-- Lighthouse score of 100 (Performance, Accessibility, Best Practices, SEO)
+If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
 
-This starter allows you to navigate seamlessly between pages with dynamic dom and/or canvas content without reloading or creating a new canvas every time. 3D components are usable anywhere in the dom. The events, dom, viewport, everything is synchronized!
+- [Next.js](https://nextjs.org)
+- [NextAuth.js](https://next-auth.js.org)
+- [Prisma](https://prisma.io)
+- [Tailwind CSS](https://tailwindcss.com)
+- [tRPC](https://trpc.io)
 
-### ⚫ Demo :
+## Learn More
 
-[![image](https://user-images.githubusercontent.com/15867665/231395343-fd4770e3-0e39-4f5c-ac30-71d823a9ef1c.png)](https://react-three-next.vercel.app/)
+To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
 
-### How to use
+- [Documentation](https://create.t3.gg/)
+- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
 
-#### Installation
+You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
 
-_Tailwind is the default style. styled-components (styled) are also available._
+## How do I deploy this?
 
-```sh
-yarn create r3f-app next my-app
-# yarn create r3f-app <next> my-app <tailwind|styled>? -ts?
-```
-
-### :passport_control: Typescript
-
-For typescript add the parameter `-ts` or `--typescript`:
-
-```sh
-yarn create r3f-app next my-app -ts
-```
-
-### :mount_fuji: Features
-
-- [x] GLSL imports
-- [x] Canvas is not getting unmounted while navigating between pages
-- [x] Canvas components usable in any div of the page
-- [x] Based on the App directory architecture
-- [x] PWA Support
-
-### :bullettrain_side: Architecture
-
-Thanks to [tunnel-rat](https://github.com/pmndrs/tunnel-rat) the starter can portal components between separate renderers. Anything rendered inside the `<View/>` component of the starter will be rendered in the 3D Context. For better performances it uses gl.scissor to cut the viewport into segments.
-
-```jsx
-<div className='relative'>
-  <View orbit className='relative sm:h-48 sm:w-full'>
-    <Dog scale={2} />
-    // Some 3D components will be rendered here
-  </View>
-</div>
-```
-
-### :control_knobs: Available Scripts
-
-- `yarn dev` - Next dev
-- `yarn analyze` - Generate bundle-analyzer
-- `yarn lint` - Audit code quality
-- `yarn build` - Next build
-- `yarn start` - Next start
-
-### ⬛ Stack
-
-- [`create-r3f-app`](https://github.com/utsuboco/create-r3f-app) &ndash; Command line tool to simplify the installation.
-- [`threejs`](https://github.com/mrdoob/three.js/) &ndash; A lightweight, 3D library with a default WebGL renderer.
-- [`@react-three/fiber`](https://github.com/pmndrs/react-three-fiber) &ndash; A React renderer for Threejs on the web and react-native.
-- [`@react-three/drei` - Optional](https://github.com/pmndrs/drei) &ndash; useful helpers for react-three-fiber
-- [`@react-three/a11y` - Optional](https://github.com/pmndrs/react-three-a11y/) &ndash; Accessibility tools for React Three Fiber
-- [`r3f-perf` - Optional](https://github.com/RenaudRohlinger/r3f-perf) &ndash; Tool to easily monitor react threejs performances.
-
-### How to contribute :
-
-```bash
-git clone https://github.com/pmndrs/react-three-next
-&& cd react-three-next && yarn install
-```
-
-### Maintainers :
-
-- [`twitter 🐈‍⬛ @onirenaud`](https://twitter.com/onirenaud)
+Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
