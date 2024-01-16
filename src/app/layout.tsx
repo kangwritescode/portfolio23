@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${poppins.variable} bg-zinc-900 leading-relaxed text-zinc-300 antialiased selection:bg-fuchsia-300 selection:text-teal-900`}
+        className={`${poppins.variable} bg-zinc-900 leading-relaxed text-zinc-300 antialiased selection:bg-fuchsia-300 selection:text-fuchsia-900`}
       >
         {children}
       </body>
