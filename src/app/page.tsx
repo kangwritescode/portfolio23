@@ -35,7 +35,7 @@ export default function HomePage() {
           , and my Resume{" "}
           <a
             className="font-medium text-slate-200 hover:text-fuchsia-300 focus-visible:text-fuchsia-300"
-            href="https://drive.google.com/file/d/1HeLUFgDow-XuIKjM5HHf5Q6fugQCdsFh/view?usp=sharing"
+            href="https://drive.google.com/file/d/1PS9r7Z-8KHibtagydbd6Ay269jnTxEd_/view?usp=sharing"
             target="_blank"
           >
             here
